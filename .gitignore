@@ -1,23 +1,52 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# ============================================================
+# Tang Nano 9K / Gowin FPGA — Yosys + nextpnr-gowin toolchain
+# ============================================================
+
+# --- Artefactos de síntesis (yosys) ---
+*.json
+!hands-on/**/*.json
+
+# --- Artefactos de Place & Route (nextpnr-gowin) ---
+*_pnr.json
+
+# --- Bitstream Gowin ---
+*.fs
+*.bin
+
+# --- Simulación (iverilog / vvp) ---
+*.vvp
+*.vcd
+*.lxt
+*.fst
+
+# --- Logs y reportes de herramientas ---
+*.log
+*.rpt
+
+# --- Directorios de build ---
+build/
+out/
+output/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- VS Code ---
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+*.code-workspace
+
+# --- Editor backups ---
+*~
+*.swp
+*.swo
+*.orig
+
+# --- Python cache (scripts de utilidad) ---
+__pycache__/
+*.pyc
+*.pyo
