@@ -1,0 +1,12 @@
+// ============================================================
+// Constraints — Tang Nano 9K (GW1NR-LV9QN88PC6/I5)
+// Proyecto: 01_blink
+// ============================================================
+
+// Reloj 27 MHz (oscilador en placa)
+IO_LOC "clk"   52;
+IO_PORT "clk"  IO_TYPE=LVCMOS33;
+
+// LED0 — activo en bajo
+IO_LOC "led_n" 10;
+IO_PORT "led_n" IO_TYPE=LVCMOS33 DRIVE=8;
